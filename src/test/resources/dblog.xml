@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AsyncDBLogger>
+	<errorFile>errlog.txt</errorFile>
+	<maxUnLogCnt>512</maxUnLogCnt>
+	<dbs>
+		<db name="db1">
+			<driver>net.sourceforge.jtds.jdbc.Driver</driver>
+			<url>jdbc:jtds:sqlserver://192.168.13.242:1433;databaseName=mydb</url>
+			<username>sa</username>
+			<password>123456</password>
+		</db>
+	</dbs>
+
+	<loggers>
+		<logger name="logger1">
+			<db>db1</db>
+			<psql>insert into LogMessage(sname) values (?)</psql>
+		</logger>
+	</loggers>
+</AsyncDBLogger>
