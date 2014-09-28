@@ -40,7 +40,6 @@
 			<url>http://114.215.158.105:8080/nexus/content/repositories/releases/</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
 	<build>
 		<plugins>
 			<plugin>
